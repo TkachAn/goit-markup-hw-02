@@ -5,32 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? family = Roboto: вес @ 400; 900 & display = swap " rel=" stylesheet ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
   </head>
 <!-- body -->
   <body>
   <!-- header -->
-    <header>
-      <a href="URL" class="logo" ><span class="logo web" >Web</span>Studio</a>
-    <!-- nav -->
-      <nav>
-        <ul>
-          <li>
+    <header class="box">
+      <span class="webstudio">
+        <a href="URL" class="logo up margin"><span class="logo web">Web</span>Studio</a>
+      </span> 
+    <!-- navigation -->
+      <nav> <!-- class="" -->
+        <ul class="box navigation">
+          <li class="menu">
             <a href="./index.html">Студия</a>
           </li>
-          <li>
+          <li class="menu">
             <a href="./portfolio.html">Портфолио</a>
           </li>
-          <li>
+          <li class="menu">
             <a href="./contakts.html">Контакты</a>
           </li>
         </ul>
       </nav>
     <!-- address -->
-      <ul>
+      <ul class="box address" >
         <li>
           <a href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -42,7 +48,7 @@
   <!-- main -->
     <main>
     <!-- hero -->
-      <section>
+      <section class="hero">
         <h1>
           Эффективные решения для вашего бизнеса
         </h1>
@@ -51,9 +57,9 @@
         </button>
       </section>
     <!-- Особенности -->
-      <section>
+      <section class="peculiarities">
         <h2>Особенности</h2>
-        <ul>
+        <ul class="box">
         <!-- Внимание к деталям -->
           <li>
             <h3>
@@ -93,18 +99,18 @@
         </ul>
       </section>
     <!-- Чем мы занимаемся -->
-      <section>
+      <section class="doing">
         <h2>Чем мы занимаемся</h2>
-        <ul>
+        <ul class="box">
           <li><img src="./images/1/img1.jpg" alt="рабочее место разработчика ПО 1" width="370"></li>
           <li><img src="./images/1/img2.jpg" alt="рабочее место разработчика ПО 2" width="370"></li>
           <li><img src="./images/1/img3.jpg" alt="рабочее место разработчика ПО 3" width="370"></li>
         </ul>
       </section>
     <!-- Наша команда -->
-      <section>
+      <section class="item">
         <h2>Наша команда</h2>
-        <ul>
+        <ul class="box">
         <!-- Михаил Ермаков -->
           <li>
             <img src="./images/1/img_erm.jpg" alt="Михаил Ермаков" width="270" >
@@ -150,9 +156,9 @@
     </main>
   <!-- footer -->
     <footer>
-      <a href="URL"><span>Web</span>Studio</a>
+      <a href="URL"class="logo down margin" ><span class="logo web" >Web</span>Studio</a>
     <!-- address -->
-      <address>
+      <address class=" margin">
         <ul>
             <li>
                 <p>г. Киев, пр-т Леси Украинки, 26</p>
