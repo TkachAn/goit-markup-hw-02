@@ -9,35 +9,32 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
   </head>
 <!-- body -->
   <body>
   <!-- header -->
-    <header class="bo">
-      <div class="cont-m">
+    <header>
+      <div class="container for-header">
       <span class="webstudio">
-        <a href="URL" class="logo up margin"><span class="logo web">Web</span>Studio</a>
+        <a href="URL" class="studio up"><span class="web studio">Web</span>Studio</a>
       </span> 
     <!-- navigation -->
       <nav> <!-- class="" -->
-        <ul class="bo navigation">
-          <li class="menu">
+        <ul class="navigation">
+          <li>
             <a href="./index.html">Студия</a>
           </li>
-          <li class="menu">
+          <li>
             <a href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="menu">
+          <li>
             <a href="./contakts.html">Контакты</a>
           </li>
         </ul>
       </nav>
     <!-- address -->
-      <ul class="bo address" >
+      <ul class="address" >
         <li>
           <a href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -52,18 +49,18 @@
     <!-- hero -->
       <section class="hero">
         <h1>
-          Эффективные решения для вашего бизнеса
+          Эффективные решения <br> для вашего бизнеса
         </h1>
         <button type="button">
           Заказать услугу
         </button>
       </section>
-    <!-- Особенности <h2>Особенности</h2>-->
-      <section class="peculiarities">
-        
-        <ul class="box pecu">
+    <!-- Особенности Benefits <h2>Особенности</h2>-->
+      <section class="Benefits">
+        <h2>Особенности</h2>
+        <ul class="container for-Benefits">
         <!-- Внимание к деталям -->
-          <li class="punkt">
+          <li class="block">
             <h3>
                 Внимание к деталям
             </h3>
@@ -72,7 +69,7 @@
             </p>
           </li>
         <!-- Пунктуальность -->
-          <li class="punkt">
+          <li class="block">
             <h3>
                 Пунктуальность
             </h3>
@@ -81,7 +78,7 @@
             </p>
           </li>
         <!-- Планирование -->
-          <li class="punkt">
+          <li class="block">
             <h3>
                 Планирование
             </h3>
@@ -90,7 +87,7 @@
             </p>
           </li>
         <!-- Современные технологии -->
-          <li class="punkt">
+          <li class="block">
             <h3>
                 Современные технологии
             </h3>
@@ -101,19 +98,18 @@
         </ul>
       </section>
     <!-- Чем мы занимаемся -->
-      <section class="doing">
+      <section class="we-doing">
         <h2>Чем мы занимаемся</h2>
-        <ul class="box goi">
-          <li class="b1"><img src="./images/1/img1.jpg" alt="рабочее место разработчика ПО 1" width="370"></li>
+        <ul class="container for-going">
+          <li><img src="./images/1/img1.jpg" alt="рабочее место разработчика ПО 1" width="370"></li>
           <li><img src="./images/1/img2.jpg" alt="рабочее место разработчика ПО 2" width="370"></li>
           <li><img src="./images/1/img3.jpg" alt="рабочее место разработчика ПО 3" width="370"></li>
         </ul>
       </section>
     <!-- Наша команда -->
       <section class="items">
-        <div class="cont-i">
-        <h2>Наша команда</h2>
-        <div class="box item">
+       <h2>Наша команда</h2>
+        <div class="container box for-items">
         <!-- Михаил Ермаков -->
           <li class="card">
             <img src="./images/1/img_erm.jpg" alt="Михаил Ермаков" width="270" >
@@ -160,22 +156,16 @@
       </section>
     </main>
   <!-- footer -->
-    <footer>
-      <a href="URL"class="logo down margin" ><span class="logo web" >Web</span>Studio</a>
+  <footer>
+  <div class="container for-footer">
+      <a href="URL"class="studio down" ><span class="web studio" >Web</span>Studio</a>
     <!-- address -->
-      <address class=" margin">
-        <ul>
-            <li>
-                <p>г. Киев, пр-т Леси Украинки, 26</p>
-            </li>
-            <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>  
+       <address>
+        <p>г. Киев, пр-т Леси Украинки, 26</p>
+        <p><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+        <p><a href="tel:+380961111111">+38 096 111 11 11</a></p>
        </address>
+      </div>
     </footer>
   </body>
 </html>

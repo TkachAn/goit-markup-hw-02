@@ -2,38 +2,66 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --bgcHiFooColor: #2f303a; /*background color Hiro & Footer*/
+  --textColor: #757575; /*var(--textColor,);*/
+  --linkColor: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /*   var(--linkColor,rgba(255, 255, 255, 0.6);*/
+  --selectColor: #2196f3; /*   var(--logoColor,);*/
+  --bgButtonColor: #2196f3; /*background color Button var(--bgButtonColor,); */
+  --logoColor: #2196f3; /*logo color Web var(--logoColor,); */
+  --studioColorUP: #000; /*logo color studio for Header var(--studioColorUP,);*/
+  --studioColorDOWN: #fff; /*logo color studio for Footer var(--studioColorDOWN,);*/
+  --h1h2h3Color: #212121; /*h1 h2 h3 color var(--h1h2h3Color,);*/
+  --bgItemsColor: #f5f4fa; /*background color Items var(--bgItemsColor,);*/
+  --bgBodyColor: #fff; /*background color Body var(--bgBodyColor,);*/
+}
 body {
-  color: #757575;
+  color: var(--textColor, #757575); /**/
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 24px;
   width: 1600px;
   height: 2349px;
-  /*padding: auto 215px;*/
-  background: #ffffff;
+  background: var(--bgBodyColor, #fff);
 }
+/*********default**********/
+/* Убираем маркеры */
 li {
-  list-style-type: none; /* Убираем маркеры */
+  list-style-type: none;
 }
+/*********default**********/
+/* Отменяем подчеркивание у ссылок */
 a,
 link {
-  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  text-decoration: none;
+  /*color: #757575;*/
+  color: var(--linkColor, rgba(255, 255, 255, 0.6));
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
 }
-a :hover {
-  text-decoration: underline;
+/*********default**********/
+/*задаём параметры ссылок 
+при наведении или фокусе*/
+a:hover,
+a:focus {
+  /*text-decoration: underline;*/
+  color: #2196f3;
+  font-weight: 700;
+  cursor: pointer;
 }
+/*********default**********/
+/* задаём цвет заголовка h2 h3 */
+h1,
 h2,
 h3 {
   color: #212121;
-  font-weight: 900;
-}
-h1 {
-  color: #ffffff;
-  font-size: 44px;
-  font-weight: 900;
-  /*font-style: normal;*/
-  line-height: 60px;
+  font-weight: 700;
 }
 h2 {
   font-size: 36px;
@@ -43,137 +71,197 @@ h3 {
   font-size: 14px;
   line-height: 16px;
 }
-/*******HEADER**************************/
+/*********default**********/
+/*задаём цвет заголовка h1*/
+h1 {
+  color: #ffffff;
+  font-size: 44px;
+  line-height: 60px;
+}
+/*********default**********/
+/**215px+container+215px***/
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer,
+.hero {
+  background-color: #2f303a;
+}
+/*******HEADER************/
+/*задаём параметры шапки*/
 header {
   width: 1600px;
   height: 80px;
-  align-items: center;
   display: flex;
+  align-content: center;
   justify-content: center;
 }
-/*******LOGO*********************/
-.cont-m {
-  background-color: burlywood;
-  width: 1170px;
-  align-items: center;
+
+/*******HEADER************/
+/*задаём параметры контейнера шапки*/
+.for-header {
+  /*width: 1170px;*/
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  /*align-content: center;*/
+  /*justify-content: space-between;*/
 }
+/*******HEADER************/
+/*******LOGO**************/
+/*размер контейнера Logo*/
 .webstudio {
   width: 145px;
   height: 31px;
-}
-.logo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+}
+/*параметры Logo*/
+.studio {
   font-size: 26px;
   line-height: 31px;
 }
 .web {
   color: #2196f3;
 }
+/*параметры Logo для шапки*/
 .up {
   color: black;
 }
+/*параметры Logo для подвала*/
 .down {
   color: #ffffff;
 }
-.margin {
-  /*margin: auto 215px; /* 60px auto*/
-}
-/*******navigation*************************/
+/*******HEADER************/
+/*******navigation********/
 .navigation {
   font-weight: 500;
-  font-size: 14px;
+  /*font-size: 14px;*/
   line-height: 16px;
   width: 294px;
   height: 16px;
-  display: inline-flex;
-  /* left: 453px;
-  top: 32px;*/
-  /*margin-left: 200px;*/
+  display: flex;
   justify-content: space-between;
+  margin-left: 93px;
+  margin-right: 331px;
 }
-.menu {
-  /*margin: auto 25px;*/
-}
+
 /*******address************************/
+/*параметры контейнера адрес для шапки*/
 .address {
-  width: 407px;
-  display: inline-flex;
+  min-width: 307px;
+  display: flex;
   justify-content: space-between;
+  margin-right: 0;
+  /*margin-left: 331px;*/
 }
 /**********.hero***************/
 .hero {
+  margin: 0;
   width: 1600px;
   height: 600px;
   /*justify-content: center;*/
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
-footer,
-.hero {
-  background-color: #2f303a;
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: var(--bgButtonColor);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
 }
-footer {
-  /* align-items: center;*/
+button:focus,
+button:hover {
+  box-shadow: 1px 1px 5px 1px gray;
+  cursor: pointer;
+}
+
+/*****************************
+.Benefits {
+  height: 288px; /*195px;*
+  background-color: greenyellow;
+  display: inline-flex;
   width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
+}*/
+.for-Benefits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  /*background-color: hotpink;*/
+  padding-left: 0px;
+  padding-right: 0px;
 }
+.block {
+  width: 270;
+  height: 101px;
+  margin: 0;
+  padding: 0;
+}
+/************************************/
+/**********************/
+.we-doing {
+  text-align: center;
+  height: 386px;
+}
+.for-going {
+  margin-top: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/************************************/
 .items {
   margin-top: 94px;
   display: flex;
-  /*flex-direction: column;*/
-  align-items: flex-end;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
-  background: #f5f4fa;
-  width: 1600px;
+  background: var(--bgItemsColor);
   height: 648px;
 }
-.cont-i {
-  /*margin-top: 194px;*/
-  /*height: 460px;*/
 
+.for-items {
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 94px;
-}
-.item {
-  margin-top: 50px;
+  padding: 0;
 }
 .card {
+  margin: 0;
+  padding: 0;
   text-align: center;
   width: 270px;
   height: 368px;
   background-color: #ffffff;
 }
-.box {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1170px;
-  align-items: center;
+/***********************/
+footer {
+  height: 252px;
   display: flex;
-  justify-content: space-between;
 }
-.peculiarities {
-  text-align: center;
-  /*width: 1170px;*/
-  height: 195px;
-  margin: 1150 auto;
-  /*background-color: darkgray;*/
+
+.for-footer {
+  min-width: 231px;
+  height: 81px;
+  margin-top: 50px;
 }
-.pecu {
-  margin-top: 94px;
-  margin-bottom: 94px;
-  /*background-color: cornflowerblue;*/
-}
-.punkt {
-  text-align: left;
-  width: 270;
-}
-.doing {
-  text-align: center;
-  /*width: 1170px;*/
-  height: 386px;
+address {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
