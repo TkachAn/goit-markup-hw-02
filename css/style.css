@@ -3,17 +3,18 @@
   box-sizing: border-box;
 }
 :root {
-  --bgcHiFooColor: #2f303a; /*background color Hiro & Footer*/
+  --bgcHiFooColor: #2f303a; /*background color Hiro & Footer var(--bgcHiFooColor,#2f303a);*/
   --textColor: #757575; /*var(--textColor,);*/
-  --linkColor: #FFFFFF90; /*   var(--linkColor,rgba(255, 255, 255, 0.6);*/grey
-  --selectColor: #2196f3; /*   var(--logoColor,);*/
-  --bgButtonColor: #2196f3; /*background color Button var(--bgButtonColor,); */
-  --logoColor: #2196f3; /*logo color Web var(--logoColor,); */
-  --studioColorUP: #000; /*logo color studio for Header var(--studioColorUP,);*/
-  --studioColorDOWN: #fff; /*logo color studio for Footer var(--studioColorDOWN,);*/
-  --h1h2h3Color: #212121; /*h1 h2 h3 color var(--h1h2h3Color,);*/
-  --bgItemsColor: #f5f4fa; /*background color Items var(--bgItemsColor,);*/
-  --bgBodyColor: #fff; /*background color Body var(--bgBodyColor,);*/
+  --linkColor: #FFFFFFa0; /*   var(--linkColor,rgba(255, 255, 255, 0.6);*/
+  --hoverColor: #2196f3; /*   var(--hoverColor,#2196f3);*/
+  --bgButtonColor: #2196f3; /*background color Button var(--bgButtonColor,#2196f3); */
+  --logoColor: #2196f3; /*logo color Web var(--logoColor,#2196f3); */
+  --studioColorUP: #000; /*logo color studio for Header var(--studioColorUP,#000);*/
+  --studioColorDOWN: #fff; /*logo color studio for Footer var(--studioColorDOWN,#fff);*/
+  --h2h3Color: #212121; /*h2 h3 color var(--h2h3Color,#212121);*/
+  --h1Color: #ffffff; /*h1 color var(--h1Color,#ffffff);*/
+  --bgItemsColor: #f5f4fa; /*background color Items var(--bgItemsColor,#f5f4fa);*/
+  --bgBodyColor: #fff; /*background color Body var(--bgBodyColor,#fff);*/
 }
 body {
   color: var(--textColor, #757575); /**/
@@ -34,7 +35,7 @@ li {
 a,
 link {
   text-decoration: none;
-  color: var(--linkColor, rgba(255, 255, 255, 0.6));
+  color: var(--textColor, #757575);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -45,16 +46,16 @@ link {
 a:hover,
 a:focus {
   /*text-decoration: underline;*/
-  color: #2196f3;
+  color: var(--hoverColor,#2196f3);
   font-weight: 700;
-  cursor: pointer;
+  
 }
 /*********default**********/
 /* задаём цвет заголовка h2 h3 */
 
 h2,
 h3 {
-  color: #212121;
+  color: var(--h2h3Color,#212121);
   font-weight: 700;
 }
 h2 {
@@ -68,7 +69,7 @@ h3 {
 /*********default**********/
 /*задаём цвет заголовка h1*/
 h1 {
-  color: #ffffff;
+  color: var(--h1Color,#ffffff);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -81,9 +82,50 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
+.portfolio{
+  height: 1360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: beige;
+  margin: 0;
+}
+.main-port{
+  height: 1548px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #F5F4FA;
+  margin: 0;
+
+}
+.filter{ 
+  display:flex;
+  justify-content:center;
+  align-items:baseline;
+  background-color: chartreuse;
+  width: 611px;
+height: 54px;
+margin: 0;
+
+}
+.button{
+  display: block;
+  block-size: auto;
+}
+.catalog{
+  background-color: cornflowerblue;
+  width: 1170px;
+  height: 1306px;
+  margin: 0;
+}
 footer,
 .hero {
-  background-color: #2f303a;
+  background-color: var(--bgcHiFooColor,#2f303a);
 }
 /*******HEADER************/
 /*задаём параметры шапки*/
@@ -121,15 +163,15 @@ header {
   line-height: 1.19;
 }
 .web {
-  color: #2196f3;
+  color: var(--logoColor,#2196f3);
 }
 /*параметры Logo для шапки*/
 .up {
-  color: black;
+  color: var(--studioColorUP,#000);
 }
 /*параметры Logo для подвала*/
 .down {
-  color: #ffffff;
+  color: var(--studioColorDOWN,#fff);
 }
 /*******HEADER************/
 /*******navigation********/
@@ -142,18 +184,19 @@ header {
   display: flex;
   justify-content: space-between;
   /*padding-top: 0px;*/
-  margin-top: 0px;
+  margin-top: 5px;
   margin-left: 93px;
   margin-right: 331px;
 }
 
 /*******address************************/
 /*параметры контейнера адрес для шапки*/
-.address {padding-left: 50PX;
+.address {
+  /*padding-left: 50PX;*/
   min-width: 357px;
   display: flex;
   justify-content:space-between;
-  margin-top: 0px;
+  margin-top: 5px;
   margin-right: 0;
   /*margin-left: 331px;*/
 }
@@ -167,20 +210,20 @@ header {
   align-items: center;
   text-align: center;
 }
-button {
+.button1 {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--ShadowsBtnColor,rgba(0, 0, 0, 0.15));
   background-color: var(--bgButtonColor,#2196F3);
   color: #ffffff;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
 }
-button:focus,
-button:hover {
-  background-color: #188CE8;
+.button1:focus,
+.button1:hover {
+  background-color: #188CE8; var(--bgBtnHvrColor,#188ce8);
   cursor: pointer;
 }
 
@@ -247,12 +290,13 @@ button:hover {
   text-align: center;
   width: 270px;
   height: 368px;
-  background-color: #ffffff;
+  background-color: var(--CardItemsColor,#ffffff);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 /***********************/
 footer {
+  top: 2097px;
   height: 252px;
   display: flex;
 }
@@ -263,11 +307,15 @@ footer {
   margin-top: 50px;
 }
 address {
-  color: #fff;
+  color: var(--AdrDownColor, #ffffff);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.5;
+}
+.a-dowh{
+  color: var(--linkColor, rgba(255, 255, 255, 0.6));
+
 }
 address > ul {
   padding: 0;
