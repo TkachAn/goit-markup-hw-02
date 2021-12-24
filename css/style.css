@@ -5,12 +5,7 @@
 :root {
   --bgcHiFooColor: #2f303a; /*background color Hiro & Footer*/
   --textColor: #757575; /*var(--textColor,);*/
-  --linkColor: rgba(
-    255,
-    255,
-    255,
-    0.6
-  ); /*   var(--linkColor,rgba(255, 255, 255, 0.6);*/
+  --linkColor: #FFFFFF90; /*   var(--linkColor,rgba(255, 255, 255, 0.6);*/grey
   --selectColor: #2196f3; /*   var(--logoColor,);*/
   --bgButtonColor: #2196f3; /*background color Button var(--bgButtonColor,); */
   --logoColor: #2196f3; /*logo color Web var(--logoColor,); */
@@ -24,7 +19,7 @@ body {
   color: var(--textColor, #757575); /**/
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.5;
   width: 1600px;
   height: 2349px;
   background: var(--bgBodyColor, #fff);
@@ -39,11 +34,10 @@ li {
 a,
 link {
   text-decoration: none;
-  /*color: #757575;*/
   color: var(--linkColor, rgba(255, 255, 255, 0.6));
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
 }
 /*********default**********/
 /*задаём параметры ссылок 
@@ -57,7 +51,7 @@ a:focus {
 }
 /*********default**********/
 /* задаём цвет заголовка h2 h3 */
-h1,
+
 h2,
 h3 {
   color: #212121;
@@ -65,18 +59,20 @@ h3 {
 }
 h2 {
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
 }
 h3 {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
 }
 /*********default**********/
 /*задаём цвет заголовка h1*/
 h1 {
   color: #ffffff;
+  font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
+  text-transform: uppercase;
 }
 /*********default**********/
 /**215px+container+215px***/
@@ -92,7 +88,6 @@ footer,
 /*******HEADER************/
 /*задаём параметры шапки*/
 header {
-  width: 1600px;
   height: 80px;
   display: flex;
   align-content: center;
@@ -102,25 +97,28 @@ header {
 /*******HEADER************/
 /*задаём параметры контейнера шапки*/
 .for-header {
-  /*width: 1170px;*/
   display: flex;
   align-items: center;
-  /*align-content: center;*/
-  /*justify-content: space-between;*/
+  
+
 }
 /*******HEADER************/
 /*******LOGO**************/
 /*размер контейнера Logo*/
 .webstudio {
+  /*margin-top: 24px;*/
   width: 145px;
   height: 31px;
+}
+.web,
+.studio {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
 /*параметры Logo*/
 .studio {
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
 }
 .web {
   color: #2196f3;
@@ -138,30 +136,31 @@ header {
 .navigation {
   font-weight: 500;
   /*font-size: 14px;*/
-  line-height: 16px;
+  line-height: 1.14;
   width: 294px;
-  height: 16px;
+  /*height: 24px;*/
   display: flex;
   justify-content: space-between;
+  /*padding-top: 0px;*/
+  margin-top: 0px;
   margin-left: 93px;
   margin-right: 331px;
 }
 
 /*******address************************/
 /*параметры контейнера адрес для шапки*/
-.address {
-  min-width: 307px;
+.address {padding-left: 50PX;
+  min-width: 357px;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  margin-top: 0px;
   margin-right: 0;
   /*margin-left: 331px;*/
 }
-/**********.hero***************/
+/**********HIRO***************/
 .hero {
   margin: 0;
-  width: 1600px;
   height: 600px;
-  /*justify-content: center;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,40 +171,41 @@ button {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background-color: var(--bgButtonColor);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--bgButtonColor,#2196F3);
   color: #ffffff;
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88;
 }
 button:focus,
 button:hover {
-  box-shadow: 1px 1px 5px 1px gray;
+  background-color: #188CE8;
   cursor: pointer;
 }
 
 /*****************************
 .Benefits {
   height: 288px; /*195px;*
-  background-color: greenyellow;
   display: inline-flex;
   width: 1600px;
 }*/
+.invisible{
+  display: none;
+
+}
 .for-Benefits {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 94px;
   margin-bottom: 94px;
-  /*background-color: hotpink;*/
   padding-left: 0px;
-  padding-right: 0px;
 }
 .block {
   width: 270;
   height: 101px;
-  margin: 0;
-  padding: 0;
+  padding: 0 15px 0 0;
 }
 /************************************/
 /**********************/
@@ -227,7 +227,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background: var(--bgItemsColor);
+  background: var(--bgItemsColor,#F5F4FA);
   height: 648px;
 }
 
@@ -240,12 +240,16 @@ button:hover {
   padding: 0;
 }
 .card {
+  font-size: 16;
+  line-height: 1.18;
   margin: 0;
   padding: 0;
   text-align: center;
   width: 270px;
   height: 368px;
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 /***********************/
 footer {
@@ -263,5 +267,11 @@ address {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.5;
+}
+address > ul {
+  padding: 0;
+}
+ul > li {
+  margin-top: 9px;
 }
