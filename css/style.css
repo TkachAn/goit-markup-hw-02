@@ -5,7 +5,7 @@
 :root {
   --bgcHiFooColor: #2f303a; /*background color Hiro & Footer var(--bgcHiFooColor,#2f303a);*/
   --textColor: #757575; /*var(--textColor,);*/
-  --linkColor: #FFFFFFa0; /*   var(--linkColor,rgba(255, 255, 255, 0.6);*/
+  --linkColor: #ffffffa0; /*   var(--linkColor,rgba(255, 255, 255, 0.6);*/
   --hoverColor: #2196f3; /*   var(--hoverColor,#2196f3);*/
   --bgButtonColor: #2196f3; /*background color Button var(--bgButtonColor,#2196f3); */
   --logoColor: #2196f3; /*logo color Web var(--logoColor,#2196f3); */
@@ -46,30 +46,34 @@ link {
 a:hover,
 a:focus {
   /*text-decoration: underline;*/
-  color: var(--hoverColor,#2196f3);
+  color: var(--hoverColor, #2196f3);
   font-weight: 700;
-  
 }
 /*********default**********/
 /* задаём цвет заголовка h2 h3 */
 
-h2,
-h3 {
-  color: var(--h2h3Color,#212121);
+.heading2,
+.heading3 {
+  color: var(--h2h3Color, #212121);
   font-weight: 700;
 }
-h2 {
+.heading2 {
   font-size: 36px;
   line-height: 1.17;
 }
-h3 {
+.heading3 {
   font-size: 14px;
   line-height: 1.14;
 }
+.itm-H3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
 /*********default**********/
 /*задаём цвет заголовка h1*/
-h1 {
-  color: var(--h1Color,#ffffff);
+.heading1 {
+  color: var(--h1Color, #ffffff);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -82,50 +86,84 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
-.portfolio{
+.portfolio {
   height: 1360px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: beige;
+  background-color: #ffffff;
   margin: 0;
+  padding: 0;
 }
-.main-port{
+.main-port {
   height: 1548px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #F5F4FA;
+  background-color: #fff;
+  border: 1px solid #eeeeee;
   margin: 0;
-
+  padding: 0;
 }
-.filter{ 
-  display:flex;
-  justify-content:center;
-  align-items:baseline;
-  background-color: chartreuse;
+.filter {
+  display: flex;
+  justify-content: center;
+
+  /*align-content: space-around;*/
+  /*background-color: chartreuse;*/
   width: 611px;
-height: 54px;
-margin: 0;
-
+  height: 54px;
+  margin: 0;
+  padding: 0;
 }
-.button{
-  display: block;
-  block-size: auto;
+.btnFilter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #212121;
+  height: 38px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 0;
+  margin: -9px 4px 16px 4px;
 }
-.catalog{
-  background-color: cornflowerblue;
+.btnFilter:focus,
+.btnFilter:hover {
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: 0; /*border: 1px solid #eeeeee;*/
+}
+.catalog {
+  /* background-color: cornflowerblue;*/
   width: 1170px;
   height: 1306px;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.catCard {
+  padding: 0;
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  /*flex-basis: calc((100% - 30px) / 3);*/
+  /*margin: 0px 10px 0px 10px;*/
 }
 footer,
 .hero {
-  background-color: var(--bgcHiFooColor,#2f303a);
+  background-color: var(--bgcHiFooColor, #2f303a);
 }
 /*******HEADER************/
 /*задаём параметры шапки*/
@@ -134,6 +172,7 @@ header {
   display: flex;
   align-content: center;
   justify-content: center;
+  border-bottom: 1px solid #ececec;
 }
 
 /*******HEADER************/
@@ -141,8 +180,6 @@ header {
 .for-header {
   display: flex;
   align-items: center;
-  
-
 }
 /*******HEADER************/
 /*******LOGO**************/
@@ -163,15 +200,15 @@ header {
   line-height: 1.19;
 }
 .web {
-  color: var(--logoColor,#2196f3);
+  color: var(--logoColor, #2196f3);
 }
 /*параметры Logo для шапки*/
 .up {
-  color: var(--studioColorUP,#000);
+  color: var(--studioColorUP, #000);
 }
 /*параметры Logo для подвала*/
 .down {
-  color: var(--studioColorDOWN,#fff);
+  color: var(--studioColorDOWN, #fff);
 }
 /*******HEADER************/
 /*******navigation********/
@@ -195,7 +232,7 @@ header {
   /*padding-left: 50PX;*/
   min-width: 357px;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-top: 5px;
   margin-right: 0;
   /*margin-left: 331px;*/
@@ -210,21 +247,23 @@ header {
   align-items: center;
   text-align: center;
 }
-.button1 {
+/*кнопка заказать услугу секции герой*/
+.btnHiro {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px var(--ShadowsBtnColor,rgba(0, 0, 0, 0.15));
-  background-color: var(--bgButtonColor,#2196F3);
+  box-shadow: 0px 4px 4px var(--ShadowsBtnColor, rgba(0, 0, 0, 0.15));
+  background-color: var(--bgButtonColor, #2196f3);
   color: #ffffff;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
 }
-.button1:focus,
-.button1:hover {
-  background-color: #188CE8; var(--bgBtnHvrColor,#188ce8);
+/* HOVER кнопка заказать услугу секции герой*/
+.btnHiro:focus,
+.btnHiro:hover {
   cursor: pointer;
+  background-color: var(--bgBtnHvrColor, #188ce8);
 }
 
 /*****************************
@@ -233,9 +272,8 @@ header {
   display: inline-flex;
   width: 1600px;
 }*/
-.invisible{
+.invisible {
   display: none;
-
 }
 .for-Benefits {
   display: flex;
@@ -270,7 +308,7 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background: var(--bgItemsColor,#F5F4FA);
+  background: var(--bgItemsColor, #f5f4fa);
   height: 648px;
 }
 
@@ -290,8 +328,9 @@ header {
   text-align: center;
   width: 270px;
   height: 368px;
-  background-color: var(--CardItemsColor,#ffffff);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--CardItemsColor, #ffffff);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 /***********************/
@@ -313,9 +352,8 @@ address {
   font-size: 14px;
   line-height: 1.5;
 }
-.a-dowh{
+.a-dowh {
   color: var(--linkColor, rgba(255, 255, 255, 0.6));
-
 }
 address > ul {
   padding: 0;
