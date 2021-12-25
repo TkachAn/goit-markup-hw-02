@@ -400,4 +400,23 @@ ul > li {
   line-height: 30px;
   margin: 0;
 }
-/*****************************/
+/*********************************/
+/******конец страницы*************/
+/*********************************/
+
+/*********************************/
+.main-contakts {
+  height: 1360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--bgBtnFilterHvr, #2196f3);
+  font-size: 40px;
+  font-weight: 900;
+}
+.a-main {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ccc, rgba(0, 0, 0, 0.58));
+}
