@@ -102,7 +102,7 @@ header {
   display: flex;
   align-content: center;
   justify-content: center;
-  border-bottom: 1px solid var(--brdrBtmHeader#ececec);
+  border-bottom: 1px solid var(--brdrBtmHeader, #ececec);
 }
 .for-header {
   display: flex;
@@ -122,7 +122,7 @@ header {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
-/*параметры Logo*/
+/*параметры Logo studio***/
 .studio {
   font-size: 26px;
   line-height: 1.19;
@@ -130,11 +130,11 @@ header {
 .web {
   color: var(--logoColor, #2196f3);
 }
-/*параметры Logo для шапки*/
+/*параметры Logo studio для шапки*/
 .up {
   color: var(--studioColorUP, #000);
 }
-/*параметры Logo для подвала*/
+/*параметры Logo studio для подвала*/
 .down {
   color: var(--studioColorDOWN, #fff);
 }
@@ -163,8 +163,12 @@ header {
   margin-right: 0;
 }
 /*****************************/
-/**********HIRO***************/
+
 /*****************************/
+/**********main***************/
+/*****************************/
+
+/**********HIRO***************/
 
 .hero {
   margin: 0;
@@ -194,12 +198,13 @@ header {
   background-color: var(--bgBtnHvrColor, #188ce8);
 }
 
-/*********************************/
 /*********особенности*************/
-/*********************************/
+
+/***скрываем заголовок***/
 .invisible {
   display: none;
 }
+
 .for-Benefits {
   display: flex;
   align-items: center;
@@ -214,9 +219,7 @@ header {
   padding: 0 15px 0 0;
 }
 
-/*********************************/
 /*********чем мы занимаемся*******/
-/*********************************/
 
 .we-doing {
   text-align: center;
@@ -229,9 +232,7 @@ header {
   justify-content: space-between;
 }
 
-/*********************************/
 /********наша команда*************/
-/*********************************/
 
 .items {
   margin-top: 94px;
@@ -311,7 +312,7 @@ ul > li {
   align-items: center;
   text-align: center;
   background-color: var(--bgMainPortfolio, #ffffff);
-  border: 1px solid var(--borderMainPortfolio, #eeeeee);
+  /*border: 1px solid var(--borderMainPortfolio, #eeeeee);*/
   margin: 0;
   padding: 0;
 }
