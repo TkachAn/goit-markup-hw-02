@@ -121,11 +121,13 @@ a:focus {
   padding: 0;
 }
 .btnFilter {
+  padding: 0 20px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   color: #212121;
   height: 38px;
+  min-width: 73px;
   background: #f5f4fa;
   border-radius: 4px;
   border: 0;
@@ -153,6 +155,8 @@ a:focus {
 }
 .catCard {
   text-align: left;
+  font-weight: bold;
+
   padding: 0;
   width: 370px;
   height: 404px;
@@ -161,6 +165,20 @@ a:focus {
   box-sizing: border-box;
   /*flex-basis: calc((100% - 30px) / 3);*/
   /*margin: 0px 10px 0px 10px;*/
+}
+.catCard h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+.catCard p {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 0 0 20px;
+  color: #757575;
 }
 footer,
 .hero {
@@ -224,7 +242,7 @@ header {
   /*padding-top: 0px;*/
   margin-top: 5px;
   margin-left: 93px;
-  margin-right: 331px;
+  margin-right: 281px;
 }
 
 /*******address************************/
