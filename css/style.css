@@ -32,6 +32,7 @@ span {
   --bgcHiFooColor: #2f303a; /*background color Hiro & Footer var(--bgcHiFooColor,#2f303a);*/
   --textColor: #757575; /*var(--textColor,);*/
   --linkColor: #ffffffa0; /*   var(--linkColor,rgba(255, 255, 255, 0.6);*/
+  --linkUpColor: #212121; /*   var(--linkColor,#212121;*/
   --hoverColor: #2196f3; /*   var(--hoverColor,#2196f3);*/
   --bgButtonColor: #2196f3; /*background color Button var(--bgButtonColor,#2196f3); */
   --logoColor: #2196f3; /*logo color Web var(--logoColor,#2196f3); */
@@ -48,7 +49,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   width: 1600px;
-  height: 2349px;
+  /*height: 2349px;*/
   background: var(--bgBodyColor, #fff);
 }
 
@@ -60,7 +61,7 @@ li {
          задаём параметры шрифтов*/
 a {
   text-decoration: none;
-  color: var(--textColor, #757575);
+  color: var(--linkUpColor, #212121);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -88,11 +89,7 @@ a:focus {
   font-size: 14px;
   line-height: 1.14;
 }
-.itm-H3 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1, 1875;
-}
+
 .heading1 {
   color: var(--h1Color, #ffffff);
   font-weight: 900;
@@ -231,8 +228,9 @@ header {
   height: 101px;
   padding-right: 15px;
 }
-.heading3 {
+.BenH3 {
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 /*********чем мы занимаемся*******/
@@ -243,7 +241,6 @@ header {
 }
 .for-doing {
   margin-top: 50px;
-  padding: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -265,7 +262,6 @@ header {
 }
 
 .for-items {
-  /*margin-top: 20px;*/
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -284,7 +280,11 @@ header {
 }
 .itm-H3 {
   margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1, 1875;
 }
+
 /*********************************/
 /*************FOOTER**************/
 /*********************************/
@@ -323,18 +323,17 @@ address {
 /*********портфолио***************/
 /*********************************/
 .main-portfolio {
-  height: 1548px;
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  align-items: flex-start;
+  justify-content: center;*/
   background-color: var(--bgMainPortfolio, #ffffff);
+  margin-bottom: 94px;
 }
 .portfolio {
-  height: 1360px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   background-color: var(--bgPortfolio, #ffffff);
   margin-top: 94px;
 }
@@ -346,6 +345,7 @@ address {
   justify-content: center;
   width: 611px;
   height: 54px;
+  margin-bottom: 4px;
 }
 .btnFilter {
   cursor: pointer;
@@ -375,7 +375,6 @@ address {
 /*********************************/
 .catalog {
   width: 1170px;
-  height: 1306px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -389,6 +388,7 @@ address {
   background: var(--bgMainPortfolio, #ffffff);
   border: 1px solid var(--brdrBtnFilter, #eeeeee);
   box-sizing: border-box;
+  margin-top: 30px;
 }
 .catCard h3,
 .catCard p {
