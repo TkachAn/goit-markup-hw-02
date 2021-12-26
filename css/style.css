@@ -323,9 +323,6 @@ address {
 /*********портфолио***************/
 /*********************************/
 .main-portfolio {
-  /*display: flex;
-  align-items: flex-start;
-  justify-content: center;*/
   background-color: var(--bgMainPortfolio, #ffffff);
   margin-bottom: 94px;
 }
@@ -374,7 +371,6 @@ address {
 /*********каталог*****************/
 /*********************************/
 .catalog {
-  width: 1170px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
