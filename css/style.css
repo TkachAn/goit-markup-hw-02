@@ -441,9 +441,7 @@ address {
   font-weight: 400;
   color: var(--ccc, rgba(0, 0, 0, 0.38));
 }
-.h1a {
-  color: #f196f3;
-}
+
 .h6a {
   position: relative;
   bottom: 10px;
