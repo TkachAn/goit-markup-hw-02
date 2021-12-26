@@ -117,7 +117,7 @@ footer,
 
 /*задаём параметры шапки*/
 header {
-  height: 80px;
+  /*/height: 80px;*/
   display: flex;
   border-bottom: 1px solid var(--brdrBtmHeader, #ececec);
 }
@@ -131,9 +131,9 @@ header {
 
 /*размер контейнера Logo*/
 .webstudio {
-  /*margin-top: 24px;*/
   width: 145px;
-  height: 31px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .web,
 .studio {
@@ -183,16 +183,20 @@ header {
 /**********HIRO***************/
 
 .hero {
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+.heading1 {
+  margin-top: 200px;
+  /*margin-bottom: 30px;*/
+}
 /*кнопка заказать услугу секции герой*/
 .btnHiro {
   margin-top: 30px;
+  margin-bottom: 200px;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -225,7 +229,7 @@ header {
 }
 .block {
   width: 270;
-  height: 101px;
+  /*height: 101px;*/
   padding-right: 15px;
 }
 .BenH3 {
@@ -237,7 +241,7 @@ header {
 
 .we-doing {
   text-align: center;
-  height: 386px;
+  /*height: 386px;*/
 }
 .for-doing {
   margin-top: 50px;
@@ -258,7 +262,7 @@ header {
   justify-content: center;
   text-align: center;
   background: var(--bgItemsColor, #f5f4fa);
-  height: 648px;
+  /*height: 648px;*/
 }
 
 .for-items {
@@ -272,11 +276,14 @@ header {
   line-height: 1.18;
   text-align: center;
   width: 270px;
-  height: 368px;
+  /*height: 368px;*/
   background-color: var(--CardItemsColor, #ffffff);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.parItem {
+  margin-bottom: 30px;
 }
 .itm-H3 {
   margin-top: 30px;
@@ -379,7 +386,7 @@ address {
 .catCard {
   text-align: left;
   font-weight: bold;
-  width: 370px;
+  /*width: 370px;*/
   height: 404px;
   background: var(--bgMainPortfolio, #ffffff);
   border: 1px solid var(--brdrBtnFilter, #eeeeee);
