@@ -379,7 +379,6 @@ address {
 }
 .catCard {
   text-align: left;
-  font-weight: bold;
 
   /*width: 370px;*/
   height: 404px;
@@ -392,17 +391,16 @@ address {
 .catCard p {
   margin-left: 24px;
 }
-.catCard h3 {
-  font-weight: bold;
+
+.catCard p {
+  font-size: 16px;
+  line-height: 1.9;
+}
+.h3catCard {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-top: 10px;
-}
-.catCard p {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.9;
 }
 /*********************************/
 /******конец страницы*************/
