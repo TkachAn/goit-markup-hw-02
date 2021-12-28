@@ -3,9 +3,12 @@
 /*********************************/
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 0; */
 }
 /** если этого не сделать здесь 
-то это надо будет делать везде */
+то это надо будет делать везде 
 h1,
 h2,
 h3,
@@ -26,7 +29,7 @@ span {
   padding: 0;
   margin: 0;
   border: 0;
-}
+}*/
 /*********переменные*************/
 :root {
   --bgcHiFooColor: #2f303a; /*background color Hiro & Footer var(--bgcHiFooColor,#2f303a);*/
@@ -61,6 +64,7 @@ li {
          задаём параметры шрифтов*/
 a {
   text-decoration: none;
+  color: #212121;
 }
 /*задаём параметры ссылок 
 при наведении или фокусе*/
@@ -175,6 +179,7 @@ header {
 }
 .address a {
   color: #757575;
+  font-weight: 500;
 }
 /*****************************/
 
